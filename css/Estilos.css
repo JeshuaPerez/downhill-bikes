@@ -1,0 +1,198 @@
+/* ===================== RESET ===================== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    color: #f5f5f5;
+    background: linear-gradient(
+        rgba(0,0,0,0.85),
+        rgba(0,0,0,0.85)
+    ),
+    url("../images/descargar.jpeg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+/* ===================== HERO ===================== */
+
+.hero {
+    min-height: 70vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.hero-content {
+    max-width: 900px;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    font-weight: 800;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+}
+
+.hero p {
+    margin-bottom: 25px;
+    opacity: 0.8;
+}
+/* ===================== BOTONES ===================== */
+
+.botonera {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+.btn {
+    background: linear-gradient(to right, #000, #4a4a5a);
+    padding: 20px 20px;
+    border-radius: 8px;
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    transition: 0.3s ease;
+    border: 1px solid rgba(255,255,255,0.2);
+}
+
+.btn:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.5);
+}
+
+/* ===================== MAIN ===================== */
+
+main {
+    max-width: 1200px;
+    margin: auto;
+    padding: 40px 20px;
+}
+
+/* ===================== INTRO ===================== */
+
+.fila {
+    display: flex;
+    gap: 40px;
+    margin-bottom: 60px;
+}
+
+.izquierda, .derecha {
+    width: 50%;
+}
+
+/* ===================== BIKE SECTIONS ===================== */
+
+.bike-section {
+    display: flex;
+    gap: 30px;
+    margin-bottom: 60px;
+    padding: 30px;
+    background: rgba(255,255,255,0.05);
+    backdrop-filter: blur(10px);
+    border-radius: 15px;
+    transition: 0.3s ease;
+}
+
+.bike-section:hover {
+    transform: translateY(-5px);
+}
+
+.bike-text {
+    flex: 1;
+}
+
+.bike-image {
+    width: 400px;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.6);
+}
+.bike-text {
+    display: flex;
+    flex-direction: column;
+}
+
+.bike-text .btn {
+    margin-top: 20px;
+    align-self: flex-start; 
+}
+
+
+/* ===================== FOOTER ===================== */
+
+footer {
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+    border-top: 1px solid rgba(255,255,255,0.2);
+}
+
+/* ===================================================== */
+/* TABLA */
+/* ===================================================== */
+
+.bike-table {
+    width: 100%;
+    border-collapse: collapse;
+    border-radius: 10px;
+    overflow: hidden;
+    background: linear-gradient(
+        to right,
+        #000000,
+        #000000,
+        #4a4a5a,
+        #4a4a5a
+    );
+    margin-top: 40px;
+}
+
+.bike-table th,
+.bike-table td {
+    padding: 15px;
+    border: 1px solid #ffffff;
+    text-align: center;
+    vertical-align: top;
+    color: rgba(255, 255, 255, 0.85);
+}
+
+.bike-table th {
+    font-weight: bold;
+}
+
+.bike-table tr:hover td {
+    background: rgba(255, 255, 255, 0.1);
+    transition: 0.2s ease;
+}
+
+/* ===================== RESPONSIVE ===================== */
+
+@media (max-width: 900px) {
+
+    .fila {
+        flex-direction: column;
+    }
+
+    .izquierda, .derecha {
+        width: 100%;
+    }
+
+    .bike-section {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .bike-image {
+        width: 100%;
+    }
+}

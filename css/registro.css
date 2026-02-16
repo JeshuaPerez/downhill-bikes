@@ -1,0 +1,208 @@
+/* ===================== RESET GENERAL ===================== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* ===================== BODY ===================== */
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(
+        rgba(0,0,0,0.85),
+        rgba(0,0,0,0.85)
+    ),
+    url("../images/descargar.jpeg");
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* ===================== CONTENEDOR ===================== */
+
+.registro-container {
+    width: 100%;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+/* ===================== CARD ===================== */
+
+.registro-card {
+    background: rgba(255,255,255,0.05);
+    backdrop-filter: blur(12px);
+    padding: 40px;
+    border-radius: 20px;
+    width: 800px;
+    max-width: 95%;
+    color: white;
+    box-shadow: 0 15px 40px rgba(0,0,0,0.6);
+    animation: aparecer 0.8s ease-in-out;
+}
+
+.registro-card h1 {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.registro-card p {
+    text-align: center;
+    margin-bottom: 30px;
+    opacity: 0.8;
+}
+
+/* ===================== FORM GRID ===================== */
+
+.registro-card form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+/* Elementos que ocupan todo el ancho */
+.full-width {
+    grid-column: span 2;
+}
+
+/* ===================== INPUT GROUP ===================== */
+
+.input-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.input-group label {
+    margin-bottom: 6px;
+    font-size: 14px;
+}
+
+.input-group input {
+    padding: 10px;
+    border-radius: 8px;
+    border: none;
+    outline: none;
+    font-size: 14px;
+}
+
+/* Efecto al enfocar */
+.input-group input:focus {
+    box-shadow: 0 0 10px rgba(255,255,255,0.3);
+}
+
+/* ===================== RADIO & CHECKBOX ===================== */
+
+.radio-group,
+.checkbox-group {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.radio-group label,
+.checkbox-group label {
+    font-size: 14px;
+    cursor: pointer;
+}
+
+/* ===================== BOTONES ===================== */
+
+.form-buttons {
+    display: flex;
+    gap: 15px;
+    margin-top: 10px;
+}
+
+.btn-secundario {
+    flex: 1;
+    padding: 12px;
+    border-radius: 8px;
+    border: 1px solid rgba(255,255,255,0.3);
+    background: transparent;
+    color: white;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.btn-secundario:hover {
+    background: rgba(255,255,255,0.1);
+}
+
+.btn-registro {
+    flex: 1;
+    padding: 12px;
+    border-radius: 8px;
+    border: none;
+    font-weight: 600;
+    cursor: pointer;
+    background: linear-gradient(to right, #000, #4a4a5a);
+    color: white;
+    transition: 0.3s ease;
+}
+
+.btn-registro:hover {
+    transform: scale(1.03);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.5);
+}
+/* ===================== BOTON VOLVER ===================== */
+
+.volver {
+    text-align: center;
+    margin-top: 25px;
+}
+
+.volver a {
+    text-decoration: none;
+    color: #ccc;
+    font-size: 14px;
+    transition: 0.3s ease;
+}
+
+.volver a:hover {
+    color: white;
+    letter-spacing: 1px;
+}
+.volver a {
+    display: inline-block;
+    padding: 8px 15px;
+    border-radius: 8px;
+    border: 1px solid rgba(255,255,255,0.3);
+}
+
+/* ===================== ANIMACIÓN ===================== */
+
+@keyframes aparecer {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* ===================== RESPONSIVE ===================== */
+
+@media (max-width: 768px) {
+    .registro-card {
+        padding: 25px;
+    }
+
+    .registro-card form {
+        grid-template-columns: 1fr;
+    }
+
+    .full-width {
+        grid-column: span 1;
+    }
+
+    .form-buttons {
+        flex-direction: column;
+    }
+}

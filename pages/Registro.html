@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="icon" type="image/png" href="../images/favicon/favicon-96x96.png" sizes="96x96" />
+  <link rel="icon" type="image/svg+xml" href="../images/favicon/favicon.svg" />
+  <link rel="shortcut icon" href="../images/favicon/favicon.ico" />
+  <link rel="apple-touch-icon" sizes="180x180" href="../images/favicon/apple-touch-icon.png" />
+  <meta name="apple-mobile-web-app-title" content="Downhill Bikes" />
+  <link rel="manifest" href="../images/favicon/site.webmanifest" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/registro.css">
+  <title>Registro | Downhill Bikes</title>
+</head>
+
+<body>
+
+<div class="registro-container">
+
+    <div class="registro-card">
+        <h1>Crear Cuenta</h1>
+        <p>Únete a la comunidad Downhill</p>
+
+        <form>
+
+            <!-- Nombre -->
+            <div class="input-group full-width">
+                <label>Nombre Completo</label>
+                <input type="text" required>
+            </div>
+
+            <!-- Correo -->
+            <div class="input-group full-width">
+                <label>Correo Electrónico</label>
+                <input type="email" required>
+            </div>
+
+            <!-- Nivel de experiencia -->
+            <div class="input-group">
+                <label>Nivel de experiencia</label>
+                <input type="range" min="0" max="10">
+            </div>
+
+            <!-- Teléfono -->
+            <div class="input-group">
+                <label>Número de contacto</label>
+                <input type="tel" placeholder="+502 0000 0000">
+            </div>
+
+            <!-- Hora entrenamiento -->
+            <div class="input-group">
+                <label>Hora habitual de entrenamiento</label>
+                <input type="time">
+            </div>
+
+            <!-- Perfil -->
+            <div class="input-group">
+                <label>Perfil (Instagram / Strava)</label>
+                <input type="url" placeholder="https://">
+            </div>
+
+            <!-- Género -->
+            <div class="input-group full-width">
+                <label>Género</label>
+                <div class="radio-group">
+                    <label><input type="radio" name="genero"> Femenino</label>
+                    <label><input type="radio" name="genero"> Masculino</label>
+                </div>
+            </div>
+
+            <!-- Idioma -->
+            <div class="input-group full-width">
+                <label>Idioma</label>
+                <div class="radio-group">
+                    <label><input type="radio" name="idioma"> Español</label>
+                    <label><input type="radio" name="idioma"> Inglés</label>
+                    <label><input type="radio" name="idioma"> Otro</label>
+                </div>
+            </div>
+
+            <!-- Virtudes -->
+            <div class="input-group full-width">
+                <label>Virtudes como rider</label>
+                <div class="checkbox-group">
+                    <label><input type="checkbox"> Honestidad</label>
+                    <label><input type="checkbox"> Tecnica</label>
+                    <label><input type="checkbox"> Estrategia</label>
+                    <label><input type="checkbox"> Elegancia</label>
+                    <label><input type="checkbox"> Veloz</label>
+                    <label><input type="checkbox"> Confianza</label>
+                </div>
+            </div>
+
+            <!-- Contraseña -->
+            <div class="input-group full-width">
+                <label>Contraseña</label>
+                <input type="password" required>
+            </div>
+
+            <!-- Botones -->
+            <div class="form-buttons full-width">
+                <input type="reset" value="Limpiar" class="btn-secundario">
+                <button type="submit" class="btn-registro">Registrarse</button>
+            </div>
+
+        </form>
+            <div class="volver">
+                <a href="../index.html">Volver a la página principal</a>
+            </div>
+
+
+    </div>
+
+</div>
+
+</body>
+</html>
+
