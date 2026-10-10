@@ -142,8 +142,13 @@ footer {
 /* TABLA */
 /* ===================================================== */
 
+.table-wrap {
+    overflow-x: auto;
+}
+
 .bike-table {
     width: 100%;
+    min-width: 720px;
     border-collapse: collapse;
     border-radius: 10px;
     overflow: hidden;

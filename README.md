@@ -8,6 +8,8 @@ Es un proyecto de práctica, hecho para dominar la maquetación y los elementos
 nativos de HTML5 antes de pasar a JavaScript. El tema lo elegí yo: el downhill es
 uno de los deportes que practico.
 
+**Demo en vivo:** https://jeshuaperez.github.io/downhill-bikes/
+
 ## Qué contiene
 
 | Página | Contenido |
